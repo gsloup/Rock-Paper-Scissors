@@ -9,7 +9,7 @@ var buttonsArray = document.querySelectorAll("button").forEach(function(button){
         
         var computerChoice = cpuChoice();
         console.log(`CPU selects ${computerChoice}`);
-        document.getElementById("computer").innerText = `The computer chose ${playerChoice}!`;
+        document.getElementById("computer").innerText = `The computer chose ${computerChoice}!`;
 
     })
 });
