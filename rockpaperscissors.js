@@ -29,7 +29,6 @@ var buttonsArray = document.querySelectorAll("button").forEach(function(button){
             console.log(`${ties} ties`);
             document.getElementById("tie").innerText = `${ties}`;
             document.getElementById("winnerStatement").innerText = "It's a tie!";
-
         };
         if (winner === "player"){
             wins++;
@@ -43,9 +42,10 @@ var buttonsArray = document.querySelectorAll("button").forEach(function(button){
             document.getElementById("loss").innerText = `${loses}`;
             document.getElementById("winnerStatement").innerText = "Computer Wins! Player Loses!";
         };
-        // Updates game count and game display
+        // Updates game count and game/play again display
         gameCount++;
-        document.getElementById("game").innerText = `${gameCount}`
+        document.getElementById("game").innerText = `${gameCount}`;
+        document.getElementById("playAgain").innerText = "Press a button to play again!";
         
 
 
